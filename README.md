@@ -106,10 +106,14 @@ GROUP BY countryName
 
 SELECT 
   REGEXP_REPLACE(countryName, '^Ar', '') AS countryName
-
 FROM wikipedia
 
 ******************************************
+select 
+ "signature",
+ JSON_VALUE("controllerExtension", '$.email') AS email
+from "inline_data"
+
 
 
 ## Docker
