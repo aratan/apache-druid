@@ -12,3 +12,8 @@ services:
     ports:
       - "8888:8888"
     command: bash -c "/apache-druid-27.0.0/bin/start-druid"
+    networks:
+      - mi-red
+networks:
+  mi-red:
+    external: true      
